@@ -2,7 +2,8 @@ package com.github.hcsp.controlflow;
 
 import com.github.blindpirate.extensions.CaptureSystemOutput;
 import java.util.Random;
-import java.util.Stream.IntStream;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 
