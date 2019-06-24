@@ -1,6 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import com.sun.deploy.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +20,7 @@ public class Main {
                 list.add(String.valueOf(j));//将Int类型的数据转换为String类型。
             }//将范围内的全部奇数存放至列表中
         }
-        System.out.println(StringUtils.join(list,","));
+        System.out.println(String.join(",",list));
 
     }//将范围内的全部奇数打印出来
 
