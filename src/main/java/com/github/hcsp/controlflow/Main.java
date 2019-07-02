@@ -1,5 +1,8 @@
 package com.github.hcsp.controlflow;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     /**
      * 打印从start到end区间所有的奇数，包括start和end本身（若符合条件）。 注意，数字之间用英文逗号分隔。
@@ -10,11 +13,14 @@ public class Main {
      * @param end 区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
+        List<Integer> oddList = new ArrayList<>();
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                System.out.println(i);
+                oddList.add(i);
             }
         }
+        String oddListString = oddList.toString();
+        System.out.println(oddListString.substring(1, oddListString.length() - 1));
     }
 
     public static void main(String[] args) {
