@@ -1,8 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     /**
      * 打印从start到end区间所有的奇数，包括start和end本身（若符合条件）。 注意，数字之间用英文逗号分隔。
