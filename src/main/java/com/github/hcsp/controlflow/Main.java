@@ -13,14 +13,11 @@ public class Main {
      * @param end 区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
-        List<Integer> oddList = new ArrayList<>();
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                oddList.add(i);
+                System.out.println(i + ",");
             }
         }
-        String oddListString = oddList.toString();
-        System.out.println(oddListString.substring(1, oddListString.length() - 1));
     }
 
     public static void main(String[] args) {
