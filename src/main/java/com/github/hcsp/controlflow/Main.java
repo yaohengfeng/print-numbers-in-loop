@@ -1,6 +1,13 @@
 package com.github.hcsp.controlflow;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 public class Main {
+
+
     /**
      * 打印从start到end区间所有的奇数，包括start和end本身（若符合条件）。 注意，数字之间用英文逗号分隔。
      *
@@ -9,10 +16,23 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
+    public static void printOddNumbersBetween(int start, int end) {
 
-    public static void main(String[] args) {
-        printOddNumbersBetween(1, 5);
-        printOddNumbersBetween(-2, 2);
+       List<String> res = new ArrayList<>();
+        for (int i = start; i <= end ; i++) {
+            if( i % 2 !=0) {
+                res.add(String.valueOf(i));
+                }
+            }
+        System.out.println(String.join("," ,res));
+        }
+
+
+        public static void main (String[]args){
+            printOddNumbersBetween(1, 5);
+            printOddNumbersBetween(-2, 2);
+        }
+
     }
-}
+
+
