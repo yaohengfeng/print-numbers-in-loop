@@ -14,7 +14,7 @@ public class Main {
             if (i%2==0){
                 continue;
             }
-            System.out.println(i+",");
+            System.out.print(i+",");
         }
     }
 
