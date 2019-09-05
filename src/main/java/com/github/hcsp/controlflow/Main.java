@@ -17,7 +17,10 @@ public class Main {
                 result.append(i).append(",");
             }
         }
-        System.out.println(result.substring(0, result.length()-1));
+        if(result.length()>0){
+            System.out.println(result.substring(0, result.length()-1));
+        }
+
     }
 
     public static void main(String[] args) {
