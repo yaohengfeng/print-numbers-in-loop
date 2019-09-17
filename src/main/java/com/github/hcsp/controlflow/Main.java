@@ -13,7 +13,7 @@ public class Main {
         String result = "";
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                result += (i + ", ");
+                result += (i + ",");
             }
         }
         System.out.println(result.subSequence(0, result.length() - 2));
