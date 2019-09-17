@@ -16,7 +16,7 @@ public class Main {
                 result += (i + ",");
             }
         }
-        System.out.println(result.subSequence(0, result.length() - 2));
+        System.out.println(result.subSequence(0, result.length() - 1));
     }
 
     public static void main(String[] args) {
