@@ -7,21 +7,9 @@ public class Main {
      * <p>例如，start=1,end=5，则打印1,3,5 又如，start=-2,end=2，则打印-1,1
      *
      * @param start 区间开始
-     * @param end   区间结束
+     * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {
-        StringBuilder odd = new StringBuilder();
-        for (int i = start; i <= end; i++) {
-            if (Math.abs(i % 2) != 0) {
-                if (odd.length() == 0) {
-                    odd.append(i);
-                } else {
-                    odd.append(",").append(i);
-                }
-            }
-        }
-        System.out.println(odd);
-    }
+    public static void printOddNumbersBetween(int start, int end) {}
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
