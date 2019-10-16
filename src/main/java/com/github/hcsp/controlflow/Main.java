@@ -12,9 +12,14 @@ public class Main {
     public static void printOddNumbersBetween(int start, int end) {
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-                System.out.println(i);
+                if(i == end || i == end - 1) {
+                    System.out.print(i);
+                    break;
+                }
+                System.out.print(i + ",");
             }
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
