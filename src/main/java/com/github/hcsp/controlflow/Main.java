@@ -9,20 +9,7 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {
-        StringBuffer oddNumbers = new StringBuffer();
-        for ( int i = start ; i<= end ; i++){
-            if ( i%2 != 0 )
-                oddNumbers.append(i).append(",");
-        }
-        if (oddNumbers.length() > 1){
-            if (oddNumbers.charAt(oddNumbers.length()-1) == ',') {
-                oddNumbers.deleteCharAt(oddNumbers.length()-1);
-            }
-            System.out.println(oddNumbers);
-        }
-
-    }
+    public static void printOddNumbersBetween(int start, int end) {}
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
