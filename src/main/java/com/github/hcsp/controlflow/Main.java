@@ -14,9 +14,9 @@ public class Main {
         for(int i = start; i <= end; i++){
             if(i % 2 != 0){
                 if(str == ""){
-                    str = str + i;
+                    str = new StringBuilder().append(str).append(i).toString();
                 } else {
-                    str = str + "," + i;
+                    str = new StringBuilder().append(str).append(",").append(i).toString();
                 }
             }
         }
