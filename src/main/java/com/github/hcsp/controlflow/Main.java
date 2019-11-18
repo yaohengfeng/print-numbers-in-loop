@@ -9,7 +9,28 @@ public class Main {
      * @param start 区间开始
      * @param end 区间结束
      */
-    public static void printOddNumbersBetween(int start, int end) {}
+    public static void printOddNumbersBetween(int start, int end) {
+        
+        //已打印到控制台的数量
+        int printQua = 0;
+        
+        //从start开始到end的所有整数进行判断
+        for (int i = start; i <= end; i++){
+            
+            //判断是不是奇数
+            if((i % 2) != 0){
+                
+                //对,进行控制
+                if (printQua >= 1){
+                    System.out.print(",");
+                }
+                
+                //打印奇数并使打印的数量加1，方便对,的控制
+                System.out.print(i);
+                printQua++;
+            }
+        }
+    }
 
     public static void main(String[] args) {
         printOddNumbersBetween(1, 5);
