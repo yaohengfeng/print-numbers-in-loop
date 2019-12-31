@@ -10,13 +10,13 @@ public class Main {
      * @param end   区间结束
      */
     public static void printOddNumbersBetween(int start, int end) {
-        String s="";
+        StringBuilder s = new StringBuilder();
         for (int i = start; i <= end; i++) {
             if (i % 2 != 0) {
-               s=s+i+",";
+                s.append(i).append(",");
             }
         }
-        System.out.println(s.substring(0,s.length()-1));
+        System.out.println(s.substring(0, s.length() - 1));
     }
 
     public static void main(String[] args) {
